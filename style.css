@@ -241,7 +241,7 @@ section{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: #000;
+    background: #28282B;
     color:#fff;
     transform: translateY(-550%);
     opacity:0;
@@ -259,7 +259,7 @@ section{
 }
 .tasks .card-wrapper .card:hover .card-content .content-wrapper p{
     text-align: left;
-    padding:2rem;
+    padding:1rem 2rem;
     word-spacing: 4px;
     line-height: 1.5rem;
 }
@@ -401,6 +401,28 @@ section{
     .about .about-pic{
         width:auto
     } 
+    .tasks .card-wrapper .card img{
+        display: none;
+    }
+    .tasks .card-wrapper #planetTsk{
+        background: url(./assets/images/saturn.png);
+    }
+    .tasks .card-wrapper #loveTsk{
+        background: url(./assets/images/heart-attack.png);
+    }
+    .tasks .card-wrapper #translatorTsk{
+        background: url(./assets/images/search.png);
+    }
+    .tasks .card-wrapper #planetTsk,
+    .tasks .card-wrapper #loveTsk,
+    .tasks .card-wrapper #translatorTsk{
+        background-size:50%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .tasks .card-wrapper .card:hover .card-content .content-wrapper p{
+        padding:1rem 3rem;
+    }
 }
 @media(max-width:500px){
     .home .home-content h3{
@@ -412,7 +434,6 @@ section{
     .home .home-content #cv-btn{
         font-size: 0.9rem;
         padding: 0.8rem 1.2rem;
-        /* color:#fff; */
     }
     .about{
         padding-top:3rem;
@@ -423,6 +444,7 @@ section{
     .tasks .card-wrapper .card{
         width:300px;
     }
+   
     .service{
         padding-top:7rem
     }
